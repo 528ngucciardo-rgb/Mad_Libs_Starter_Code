@@ -8,16 +8,6 @@
 // TODO: Save all responses in meaningfully named variables using let or const.
 // Hint: let animal = prompt("Enter an animal:");
 // Hint: let age = Number(prompt("Enter an age:"));
-let person1 = prompt("Enter a name of a person:");
-let person2 = prompt("Enter a name of another person:");
-let place = prompt("Enter a place:");
-let musicartest = prompt("Enter a music artist:");
-let song = prompt("Enter a song title:");
-
-// PART 2 — DATA TYPES
-// TODO: Declare a real Boolean: const isRidiculous = true; (true is NOT "true").
-// TODO: Log typeof for a string, a number and a Boolean with labels.
-// Hint: console.log("Animal type:", typeof animal);
 
 // PART 3 — VARIABLE CHANGES AND CONCATENATION
 // TODO: Reassign one let variable after its first value (use the updated value).
@@ -34,10 +24,24 @@ let song = prompt("Enter a song title:");
 // TODO: Build one original story with BACKTICKS and ${variableName}.
 // TODO: Include ALL eight prompt responses, plus at least two math results.
 // Hint (not a whole story): let story = `Once, ${animal} arrived...`;
-
 // PART 6 — DISPLAY ON THE WEBPAGE
 // TODO: Uncomment and complete the line below once your story variable exists.
 // document.getElementById("madlib-output").innerHTML = story;
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
+
+
+let person1 = prompt("Enter a name of a person:");
+let person2 = prompt("Enter a name of another person:");
+let place = prompt("Enter a place:");
+let musicartist = prompt("Enter a music artist:");
+let song = prompt("Enter a song title:");
+let number1 = Number(prompt("Enter a number:"));
+let animal1 = prompt("Enter an animal:");
+let verb = prompt ("Enter a verb:");
+let noun = prompt("Enter a noun:");
+
+let myStory =(`One day, ${person1} was fighting ${person2} in ${place}, while ${musicartist} was doing the halftime show singing his hit song ${song}. Then, ${number1} ${animal1} flew through the window and started ${verb} The ${animal1}s were ${noun}.`);
+
+document.getElementById("madlib-output").innerHTML = myStory;
