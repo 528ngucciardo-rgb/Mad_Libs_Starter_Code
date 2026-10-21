@@ -8,6 +8,11 @@
 // TODO: Save all responses in meaningfully named variables using let or const.
 // Hint: let animal = prompt("Enter an animal:");
 // Hint: let age = Number(prompt("Enter an age:"));
+let person1 = prompt("Enter a name of a person:");
+let person2 = prompt("Enter a name of another person:");
+let place = prompt("Enter a place:");
+let musicartest = prompt("Enter a music artist:");
+let song = prompt("Enter a song title:");
 
 // PART 2 — DATA TYPES
 // TODO: Declare a real Boolean: const isRidiculous = true; (true is NOT "true").
