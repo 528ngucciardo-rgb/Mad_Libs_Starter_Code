@@ -58,6 +58,6 @@ number4 = number1 + number2;
 
 
 
-let myStory =(`One day, ${person1} was fighting ${person2} in ${place}, while ${musicartist} was there singing ${song}. Then, ${number1} ${animal1} flew through the window and started ${verb} The ${animal1}s were ${noun}. Then, ${number2} ${animal2}s decided to join the fight, and then had ${number3} babies with ${person2}! Then, ${person1}'s dog, ${dogname}, walked in and decided to Doordash ${food} for everyone. But, ${person3} was ${emotion} and decided to gather his ${number4} goons, then they all pull out their ${weapon1}s and started to fight. It led to the death of ${person2} and ${person1} was so upset that he killed {person3} with his ${weapon2}.`);
+let myStory =(`One day, ${person1} was fighting ${person2} in ${place}, while ${musicartist} was there singing ${song}. Then, ${number1} ${animal1}s flew through the window and started ${verb} because the ${animal1}s were ${noun}. Then, ${number2} ${animal2}s decided to join the fight, and then had ${number3} babies with ${person2}! Then, ${person1}'s dog, ${dogname}, walked in and decided to Doordash ${food} for everyone. But, ${person3} was ${emotion} and decided to gather his ${number4} goons, then they all pull out their ${weapon1}s and started to fight. It led to the death of ${person2} and ${person1} was so upset that he killed {person3} with his ${weapon2}.`);
 
 document.getElementById("madlib-output").innerHTML = myStory;
