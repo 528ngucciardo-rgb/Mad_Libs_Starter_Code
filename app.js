@@ -31,7 +31,7 @@
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
 
-
+//Inputs and values
 let person1 = prompt("Enter a name of a person:");
 let person2 = prompt("Enter a name of another person:");
 let place = prompt("Enter a place:");
@@ -40,7 +40,7 @@ let song = prompt("Enter a song title:");
 let number1 = Number(prompt("Enter a number:"));
 let animal1 = prompt("Enter an animal:");
 let verb = prompt ("Enter a verb:");
-let noun = prompt("Enter a noun:");
+let adjective = prompt("Enter an adjective:");
 let number2= Number(prompt("Enter another number:"));
 let animal2 = prompt("Enter another animal:");
 let dogname = prompt("Enter a dog name:");
@@ -54,14 +54,21 @@ let food2 = prompt("Enter another food:");
 
 // MATH 
 
-number3 = number1 * number2;
-number4 = number1 + number2;
-let quotient = number2 / number1;
+let number3 = number1 * number2;
+let number4 = number1 + number2;
+let quotient = number1 !== 0 ? number2 / number1 : 0; // Avoid division by zero
 let power = number1 ** number2;
-let remainder = number2 % number1;
+let remainder = number1 !== 0 ? number2 % number1 : 0; // Avoid division by zero
 
 
+//String start
+let greeting = "The chaos begins with " + person1 + "!";
+console.log(greeting);
 
-let myStory =(`One day, <strong>${person1}</strong> was fighting <strong>${person2}</strong> in <strong>${place}</strong>, while <strong>${musicartist}</strong> was there singing <strong>${song}</strong>. Then, <strong>${number1}</strong> <strong>${animal1}s</strong> flew through the window and started <strong>${verb}</strong> because the <strong>${animal1}s</strong> were <strong>${noun}</strong>. Then, <strong>${number2}</strong> <strong>${animal2}s</strong> decided to join the fight, and then had <strong>${number3}</strong> babies with <strong>${person2}</strong>! Then, <strong>${person1}'s</strong> dog, <strong>${dogname}</strong>, walked in and decided to Doordash <strong>${food1}</strong> for everyone. But, <strong>${person3}</strong> was <strong>${emotion}</strong> and decided to gather his <strong>${number4}</strong> goons, then they all pull out their <strong>${weapon1}s</strong> and started to fight. It led to the death of <strong>${person2}</strong> and <strong>${person1}</strong> was so upset that he killed <strong>${person3}</strong> with his <strong>${weapon2}</strong>. After the battle, <strong>${remainder}</strong> goons were still alive. Then, <strong>${person4}</strong> came in with <strong>${power}</strong> boxes of <strong> ${food2}</strong> and then split all the boxes by <strong>${quotient}</strong> and gave them to <strong>${person1}</strong>. And then, <strong>${person1}</strong> and <strong>${person4}</strong> got married.`);
+//Math start
+let boxesperPerson = Math.floor(quotient);
+
+//Story
+let myStory =(`One day, <strong>${person1}</strong> was fighting <strong>${person2}</strong> in <strong>${place}</strong>, while <strong>${musicartist}</strong> was there singing <strong>${song}</strong>. Then, <strong>${number1}</strong> <strong>${animal1}s</strong> flew through the window and started <strong>${verb}</strong> because the <strong>${animal1}s</strong> were <strong>${adjective}</strong>. Then, <strong>${number2}</strong> <strong>${animal2}s</strong> decided to join the fight, and then had <strong>${number3}</strong> babies with <strong>${person2}</strong>! Then, <strong>${person1}'s</strong> dog, <strong>${dogname}</strong>, walked in and decided to Doordash <strong>${food1}</strong> for everyone. But, <strong>${person3}</strong> was <strong>${emotion}</strong> and decided to gather his <strong>${number4}</strong> goons, then they all pull out their <strong>${weapon1}s</strong> and started to fight. It led to the death of <strong>${person2}</strong> and <strong>${person1}</strong> was so upset that he killed <strong>${person3}</strong> with his <strong>${weapon2}</strong>. After the battle, <strong>${remainder}</strong> goons were still alive. Then, <strong>${person4}</strong> came in with < strong>${power}</ strong> boxes of < strong> ${food2}</ strong> and then split all the boxes by < strong>${quotient}</ strong> and gave them to < strong>${person1}</ strong>. And then, < strong>${person1}</ strong> and < strong>${person4}</ strong> got married.`);
 
 document.getElementById("madlib-output").innerHTML = myStory;

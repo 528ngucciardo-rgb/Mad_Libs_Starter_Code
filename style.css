@@ -1,4 +1,95 @@
 /* Customize this design to match your story. Keep the responsive Bootstrap layout. */
-body { background: #f4f6fa; }
-.story-output { min-height: 8rem; line-height: 1.7; white-space: normal; }
-.card { border-radius: 1rem; }
+body { 
+    background: linear-gradient(135deg, #eaf3ff, #fff0df);
+    color: #172554;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(120deg, #123c82, #0878c9) !important;
+    color: white;
+    border-bottomL 6px solid #ff8c32 !important;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 0 #082451;
+}
+
+header p {
+    color: #eaf3ff; !important;
+    font-size: 1.05rem;
+}
+
+.card {
+    background: white;
+    border: 2px solid #b8d5ff;
+    border-radius: 16px;
+    box-shadow: 5px 5px 0 #c4dcff !important;
+    overflow-wrap: anywhere;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card h2 {
+    color: #1456a0;
+    font-weight: 900;
+}
+
+
+.story-output { 
+    min-height: 8rem; 
+    line-height: 1.7; 
+    white-space: normal; 
+    font-size: 1.05rem;
+    overflow-wrap: anywhere;
+}
+
+.stroy-output strong {
+    color: #d95d00;
+    background: #fff0df;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+aside .card {
+    background: #fff8ef;
+    border: 2px solid #ffb46b;
+    box-shadow: 5px 5px 0 #ffdfbd !important;
+}
+
+aside .card h2 {
+    color: #c45100;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: #1456a0 !important;
+    padding: 1.5rem 0 !important;
+}
+
+@media (max-width: 576 px) {
+    header h1 {
+        font-size: 1.7 rem;
+    }
+
+header p {
+    font-size: 0.95 rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.story-output {
+    font-size: 1rem;
+    }
+
+}
